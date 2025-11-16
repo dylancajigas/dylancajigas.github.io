@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Dylan Cajigas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #3d009e;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Dylan Cajigas</h1>
+</div>
+
+<div class="row">
+  <div class="main">
+    <h1><u>My Projects</u></h1>
+
+    <h2>Campus Map</h2>
+    <h5>React, Typescript</h5>
+    <ul>
+        <li>
+            Map of UW campus with various functionalities
+            <ul>
+                <li>Adding classes to schedule</li>
+                <li>Adding friends</li>
+                <li>Finding shortest walking paths between classes</li>
+                <li>Finding friends locations based on time (by their class schedule)</li>
+                <li>Placing and moving markers on a map (through clicking and building search)</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    
+    <h2>Painting Website</h2>
+    <h5>React, Typescript</h5>
+    <ul>
+        <li>Used to paint, save, and load drawings from files</li>
+        <li>
+            Multiple modes:
+            <ul>
+                <li>Dot painting, where colors could be selected and dots placed on a canvas</li>
+                <li>Square dividing, where a canvas would start as one square, and clicking it would allow for changing its color, or splitting it into four smaller squares recursively</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+
+    <h2>Flight Database Searcher</h2>
+    <h5>Java, PostgreSQL</h5>
+    <ul>
+        <li>Command line interface to query/book flights</li>
+        <li>Routes from one airport to another can be found based on parameters such as, shortest travel time, cheapest, direct vs layover, etc.</li>
+        <li>Allows user login through password hashes</li>
+        <li>Users can book flights and show their itineraries</li>
+    </ul>
+    <br>
+
+    <h2>File Parser/Indexer</h2>
+    <h5>C++, HTML</h5>
+    <ul>
+        <li>Website that allows for searching files for words/phrases</li>
+        <li>A folder of files added to an index and queried through an HTML interface</li>
+        <li>Sets up web server using C++</li>
+        <li>Hashtable implementation done from scratch in C++, with saving/loading from a file</li>
+    </ul>
+    <br>
+
+    <h2>Machine Learning Suite</h2>
+    <h5>Python, Numpy, Pytorch, Pandas, Matplotlib</h5>
+    <ul>
+        <li>A collection of different machine learning algorithms</li>
+        <li>Linear regression</li>
+        <li>Polynomial regression (ridge regression)</li>
+        <li>Logistic regression</li>
+        <li>Neural networks</li>
+        <li>LASSO with gradient descent</li>
+    </ul>
+    <br>
+
+  </div>
+</div>
+
+<div class="footer">
+</div>
+
+</body>
+</html>
